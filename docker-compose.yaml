@@ -21,7 +21,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: Abc123456789
-      POSTGRES_DB: onion_db
+      POSTGRES_DB: testdb
     networks:
       - nestjs-network
 networks:
