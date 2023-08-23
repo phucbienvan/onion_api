@@ -37,3 +37,12 @@ model Note {
 
   @@map("notes")
 }
+
+model Message {
+  id Int @id @default(autoincrement())
+  name String
+  content String
+  createdAt DateTime @default(now())
+
+  @@map("messages")
+}
