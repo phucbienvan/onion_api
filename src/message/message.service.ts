@@ -8,9 +8,11 @@ export class MessageService {
   clientToUser = {};
 
   async create(createMessageDto: CreateMessageDto) {
+    const name = 'phuc';
     const message = await this.prismaService.message.create({
       data: {
-        ...createMessageDto
+        ...createMessageDto,
+        name
       }
     });
 
